@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url('img/bg-pattern.png'), linear-gradient(to right, rgb(252, 44, 78), rgb(158, 4, 247));
+    height: 120vh;
+}
+
+.stop{
+    height: 100vh;
+}
+
+@media only screen and (min-width:768px) {
+
+    header,
+    #features {
+        height: 90vh;
+    }
+
+    .stop {
+        height: 75vh;
+    }
+
+}
+
+.start {
+    color: #fdcc52;
+}
+
+.start:hover,
+a:hover {
+    color: #ffffff;
+}
+
+a {
+    color: white;
+}
+
+.buttonOne {
+    border: 1px solid #ffffff;
+}
+
+.buttonOne:hover {
+    background-color: #fdcc52;
+    border-color: #fdcc52;
+    transition: all .3s;
+}
+
+
+.phone {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    width: 16rem;
+}
+
+.demo {
+    position: absolute;
+    top: 3.4rem;
+    left: 1rem;
+    z-index: 2;
+    width: 14rem;
+}
+
+@media only screen and (min-width:768px) {
+
+    .demo {
+        top: 4.3rem;
+        left: 1.25rem;
+    }
+}
+
+.gplay,
+.store {
+    width: 12rem;
+}
+
+i {
+    color: #800080;
+    opacity: 0.9;
+}
+
+i:hover{
+    opacity: 1;
+}
+
+hr {
+    width: 10%;
+}
+
+.stop {
+    background-image: url('img/bg-cta.jpg');
+
+}
+
+footer,
+footer a {
+    background-color: black;
+    color: gray;
+}
+
+footer a:hover {
+    color: #fdcc52;
+}
