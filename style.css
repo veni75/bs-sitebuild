@@ -2,16 +2,35 @@
     box-sizing: border-box;
 }
 
+@font-face{
+    font-family:lato;
+    src: url('fonts/Lato-Regular.ttf');
+}
+
+@font-face{
+    font-family:catamaran;
+    src: url('fonts/Catamaran-Regular.ttf');
+}
+
+@font-face{
+    font-family:mulish;
+    src: url('fonts/Mulish-Regular.ttf');
+}
+
 header {
-    background-image: url('img/bg-pattern.png'), linear-gradient(to right, rgb(252, 44, 78), rgb(158, 4, 247));
+    background-image: url('img/bg-pattern.png'), linear-gradient(to right, #dd2533,#7b4497);
     height: 120vh;
+}
+
+.navbar{
+    font-family: catamaran, Arial, Helvetica, sans-serif;
 }
 
 .stop{
     height: 100vh;
 }
 
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:992px) {
 
     header,
     #features {
@@ -34,11 +53,16 @@ a:hover {
 }
 
 a {
-    color: white;
+    color: #d8d8d8;
+}
+
+#download, #contact{
+    background-color: #fec947;;
 }
 
 .buttonOne {
     border: 1px solid #ffffff;
+    font-family: lato,Arial, Helvetica, sans-serif;
 }
 
 .buttonOne:hover {
@@ -63,7 +87,7 @@ a {
     width: 14rem;
 }
 
-@media only screen and (min-width:768px) {
+@media only screen and (min-width: 992px) {
 
     .demo {
         top: 4.3rem;
@@ -85,19 +109,23 @@ i:hover{
     opacity: 1;
 }
 
+.fa-heart{
+    color: red;
+}
+
 hr {
     width: 10%;
 }
 
 .stop {
     background-image: url('img/bg-cta.jpg');
-
 }
 
 footer,
 footer a {
     background-color: black;
     color: gray;
+    font-family: mulish, Arial, Helvetica, sans-serif;
 }
 
 footer a:hover {
