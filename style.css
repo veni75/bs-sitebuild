@@ -5,17 +5,17 @@
 /* Fonts*/
 @font-face {
     font-family: lato;
-    src: url('fonts/Lato-Regular.ttf');
+    src: url('fonts/Lato-Light.ttf');
 }
 
 @font-face {
     font-family: catamaran;
-    src: url('fonts/Catamaran-Regular.ttf');
+    src: url('fonts/Catamaran-Light.ttf');
 }
 
 @font-face {
     font-family: mulish;
-    src: url('fonts/Mulish-Regular.ttf');
+    src: url('fonts/Mulish-Light.ttf');
 }
 
 
@@ -108,7 +108,7 @@ a {
     }
 }
 
-/* ownload */
+/* Download */
 #download,
 #contact {
     background-color: #fec947;
@@ -118,6 +118,11 @@ a {
 .gplay,
 .store {
     width: 12rem;
+}
+
+p{
+    font-family: mulish, Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
 }
 
 /* Feature */
@@ -154,6 +159,10 @@ hr {
 /* Contact */
 .fa-heart {
     color: red;
+}
+
+.fa-facebook{
+    background-color: #3300c0;
 }
 
 /* Footer */
