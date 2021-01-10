@@ -2,37 +2,43 @@
     box-sizing: border-box;
 }
 
-@font-face{
-    font-family:lato;
+/* Fonts*/
+@font-face {
+    font-family: lato;
     src: url('fonts/Lato-Regular.ttf');
 }
 
-@font-face{
-    font-family:catamaran;
+@font-face {
+    font-family: catamaran;
     src: url('fonts/Catamaran-Regular.ttf');
 }
 
-@font-face{
-    font-family:mulish;
+@font-face {
+    font-family: mulish;
     src: url('fonts/Mulish-Regular.ttf');
 }
 
+
+/* Header */
 header {
-    background-image: url('img/bg-pattern.png'), linear-gradient(to right, #dd2533,#7b4497);
+    background-image: url('img/bg-pattern.png'), linear-gradient(to right, #dd2533, #7b4497);
     height: 120vh;
 }
 
-.navbar{
+.navbar,
+h1 {
     font-family: catamaran, Arial, Helvetica, sans-serif;
 }
 
-.stop{
+.stop {
     height: 100vh;
 }
 
 @media only screen and (min-width:992px) {
+    header {
+        height: 90vh;
+    }
 
-    header,
     #features {
         height: 100vh;
     }
@@ -56,13 +62,10 @@ a {
     color: #d8d8d8;
 }
 
-#download, #contact{
-    background-color: #fec947;;
-}
-
 .buttonOne {
     border: 1px solid #ffffff;
-    font-family: lato,Arial, Helvetica, sans-serif;
+    font-family: lato, Arial, Helvetica, sans-serif;
+    
 }
 
 .buttonOne:hover {
@@ -71,6 +74,10 @@ a {
     transition: all .3s;
 }
 
+.text-dark:hover,
+.text-dark:active {
+    color: #fdcc52;
+}
 
 .phone {
     position: absolute;
@@ -89,15 +96,23 @@ a {
 
 @media only screen and (min-width: 992px) {
     .phone {
-        
+
         top: 0rem;
         left: 5px;
         width: 16rem;
     }
+
     .demo {
         top: 4.3rem;
         left: 1.25rem;
     }
+}
+
+/* ownload */
+#download,
+#contact {
+    background-color: #fec947;
+    ;
 }
 
 .gplay,
@@ -105,30 +120,43 @@ a {
     width: 12rem;
 }
 
+/* Feature */
 i {
     color: #800080;
     opacity: 0.9;
 }
 
-i:hover{
+i:hover {
     opacity: 1;
 }
 
-.place{
+.place {
     height: 40rem;
 }
 
-.fa-heart{
+hr {
+    width: 15%;
+}
+
+@media only screen and (min-width: 992px) {
+    hr {
+        width: 7%;
+    }
+}
+
+/* Stop */
+.stop {
+    background-image: url('img/bg-cta.jpg');
+    background-position: center;    
+    filter: brightness(50%);    
+}
+
+/* Contact */
+.fa-heart {
     color: red;
 }
 
-hr {
-    width: 10%;
-}
-
-.stop {
-    background-image: url('img/bg-cta.jpg');
-}
+/* Footer */
 
 footer,
 footer a {

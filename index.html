@@ -8,36 +8,38 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="js/scroll.js"></script>
     <title>Sitebuild</title>
 </head>
 
 <body>
     <div class="container-fluid">
         <header class="">
-            <nav class="container navbar fixed-top navbar-expand-lg bg-white d-none">
-                <a class="navbar-brand h1" href="#">Start bootstrap</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <div class="bg-white">
+                <nav class="container navbar navbar-expand-md scroll d-none">
+                    <a class="navbar-brand h1 text-dark" href="#">Start bootstrap</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto text-uppercase">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#download">download <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#features">features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <nav class="container navbar navbar-expand-lg">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto text-uppercase">
+                            <li class="nav-item active">
+                                <a class="nav-link text-dark" href="#download">download <span
+                                        class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#features">features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#contact">contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <nav class="container navbar navbar-expand-md scrollTop">
                 <a class="navbar-brand h1 start" href="#">Start bootstrap</a>
                 <button class="navbar-toggler navbar-dark border-white" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -61,37 +63,41 @@
                 </div>
             </nav>
             <div class="row my-5">
-                <div class="col-lg-4 offset-lg-2 my-5">
-                    <p class="text-white h2 text-center text-lg-left p-5">New Age is an app
+                <div class="col-md-4 offset-md-2 my-5">
+                    <p class="text-white h2 text-center text-md-left p-5">New Age is an app
                         landing page that will help you beautifully
                         showcase your new mobile app, or anything else!</p>
-                    <a class="buttonOne rounded-pill btn-lg text-white text-uppercase text-center ml-5" href="">Start now for free!</a>
+                    <a class="buttonOne rounded-pill btn-lg text-white text-uppercase text-center mx-auto ml-lg-5"
+                        href="">Start
+                        now for free!</a>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-md-4">
                     <img class="demo" src="img/demo-screen-1.jpg" alt="">
                     <img class="phone" src="img/phone.png" alt="">
                 </div>
             </div>
         </header>
         <section id="download" class="text-center p-5">
-            <h1 class="pt-5 w-lg-50 mx-auto">Discover what all the buzz is about!</h1>
-            <small class="text-left d-none d-lg-block">google-play-badge.svg</small>
+            <h1 class="pt-5 w-md-50 mx-auto">Discover what all the buzz is about!</h1>
+            <small class="text-left d-none d-md-block">google-play-badge.svg</small>
             <p>Our app is available on any mobile device! Download now to get started!</p>
-            <a href="play.google.com"><img class="gplay d-sm-block d-lg-inline my-5 mx-auto" src="img/google-play-badge.svg" alt=""></a>
-            <a href="apple.com"><img class="store d-sm-block d-lg-inline my-5 mx-auto" src="img/app-store-badge.svg" alt=""></a>
+            <a href="play.google.com"><img class="gplay d-sm-block d-md-inline my-5 mx-auto"
+                    src="img/google-play-badge.svg" alt=""></a>
+            <a href="apple.com"><img class="store d-sm-block d-lg-inline my-5 mx-auto" src="img/app-store-badge.svg"
+                    alt=""></a>
         </section>
         <section id="features" class="text-center p-5">
-            <h1 class="pt-5 w-lg-50 mx-auto">Unlimited Features, Unlimited Fun</h1>
+            <h1 class="pt-5 w-md-50 mx-auto">Unlimited Features, Unlimited Fun</h1>
             <p>Check out what you can do with this app theme!</p>
             <hr>
             <div class="container py-5">
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-md-4">
                         <img class="demo" src="img/demo-screen-1.jpg" alt="">
                         <img class="phone" src="img/phone.png" alt="">
                         <div class="place"></div>
                     </div>
-                    <div class="col-lg-4 mt-5">
+                    <div class="col-md-4 mt-5">
                         <div class="card h-50 border-0 mx-auto" style="width: 18rem;">
                             <i class="fa fa-mobile fa-3x"></i>
                             <div class="card-body">
@@ -108,7 +114,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 mt-5">
+                    <div class="col-md-4 mt-5">
                         <div class="card h-50 border-0 mx-auto" style="width: 18rem;">
                             <i class="fa fa-camera fa-3x"></i>
                             <div class="card-body">
@@ -128,12 +134,14 @@
             </div>
         </section>
         <section class="stop p-5">
-            <div class="row">
-                <div class="col-lg-4 offset-lg-2">
-                    <p class="text-white h1 text-center text-lg-left pt-5">Stop waiting.</p>
-                    <p class="text-white h1 text-center text-lg-left mb-3">Start building.</p>
-                    <a class="buttonOne rounded-pill btn-lg text-white text-uppercase text-center mt-5" href="">Let's
-                        get started</a>
+            <div class="d-flex justify-content-center flex-column h-100">
+                <div class="col-sm-7 col-md-4 offset-md-2">
+                    <p class="text-white h1">Stop waiting.</p>
+                    <p class="text-white h1 mb-4">Start building.</p>
+                    <div class="">
+                        <a class="buttonOne rounded-pill btn-lg text-white text-uppercase text-center" href="">Let's
+                            get started</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -240,4 +248,5 @@
     <script src="js/tooltip.js"></script>
 
 </body>
+
 </html>
