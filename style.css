@@ -2,6 +2,13 @@
     box-sizing: border-box;
 }
 
+html,
+#download,
+#features,
+#contact {
+    scroll-behavior: smooth;
+}
+
 /* Fonts*/
 @font-face {
     font-family: lato;
@@ -65,7 +72,7 @@ a {
 .buttonOne {
     border: 1px solid #ffffff;
     font-family: lato, Arial, Helvetica, sans-serif;
-    
+
 }
 
 .buttonOne:hover {
@@ -82,14 +89,14 @@ a {
 .phone {
     position: absolute;
     top: 0rem;
-    left: 26vw;
+    left: 0;
     width: 16rem;
 }
 
 .demo {
     position: absolute;
     top: 3.4rem;
-    left: 28vw;
+    left: 16px;
     z-index: 2;
     width: 14rem;
 }
@@ -120,7 +127,7 @@ a {
     width: 12rem;
 }
 
-p{
+p {
     font-family: mulish, Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
 }
@@ -152,17 +159,25 @@ hr {
 /* Stop */
 .stop {
     background-image: url('img/bg-cta.jpg');
-    background-position: center;    
-    filter: brightness(50%);    
+    background-position: center;
+    filter: brightness(50%);
 }
 
 /* Contact */
 .fa-heart {
-    color: red;
+    color: #ff0000;
 }
 
-.fa-facebook{
-    background-color: #3300c0;
+.fa-facebook {
+    background-color: #3b5999;
+}
+
+.fa-twitter {
+    background-color: #1da1f3;
+}
+
+.fa-google {
+    background-color: #dd4c39;
 }
 
 /* Footer */

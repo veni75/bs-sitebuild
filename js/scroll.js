@@ -1,29 +1,27 @@
 'use strict';
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', animation);
-});
-
 function animation (e){
     e.preventDefault();
+    console.log(document.querySelector(this.getAttribute('href')));
     document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
-    });
+        behavior: 'smooth'        
+    });    
 }
 
+document.querySelectorAll('.nav-link').forEach(anchor => {
+    anchor.addEventListener('click', animation);
+});
 
 let scroll = document.querySelector(".scroll");
 let scrollTop = document.querySelector(".scrollTop");
 
-document.querySelector('.html, body').onscroll = lgSrl;
-function lgSrl(e) {
-    let tav = document.querySelector('html,body').scrollTop;
+document.querySelector('.html, body').onscroll = lgScroll;
+function lgScroll(e) {
+    let distance = document.querySelector('html,body').scrollTop;    
     scroll.classList.remove("d-none");
-    scrollTop.classList.add("d-none");
-    scroll.classList.add("fixed-top");
-    scroll.classList.add("bg-white");
+    scrollTop.classList.add("d-none");   
 
-    if (tav === 0) {
+    if (distance === 0) {
         scroll.classList.add("d-none");
         scrollTop.classList.remove("d-none");
     }
