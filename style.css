@@ -2,10 +2,7 @@
     box-sizing: border-box;
 }
 
-html,
-#download,
-#features,
-#contact {
+html {
     scroll-behavior: smooth;
 }
 
@@ -98,7 +95,7 @@ a {
     top: 3.4rem;
     left: 16px;
     z-index: 2;
-    width: 14rem;
+    width: 14.3rem;
 }
 
 @media only screen and (min-width: 992px) {
@@ -110,8 +107,8 @@ a {
     }
 
     .demo {
-        top: 4.3rem;
-        left: 1.25rem;
+        top: 3.65rem;
+        left: 1.3rem;
     }
 }
 
@@ -184,8 +181,8 @@ hr {
 
 footer,
 footer a {
-    background-color: black;
-    color: gray;
+    background-color: #000000;
+    color: #808080;
     font-family: mulish, Arial, Helvetica, sans-serif;
 }
 
